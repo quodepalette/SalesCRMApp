@@ -13,14 +13,14 @@
   <meta property="og:title" content="Leadwise CRM | Customer workspace demo">
   <meta property="og:description" content="A clean, accessible CRM dashboard demo with light and dark themes.">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico?v=3" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <script src="/js/theme-init.js?v=2026.10"></script>
-  <link rel="stylesheet" href="/css/demo.css?v=2026.10">
-  <script src="/js/demo.js?v=2026.10" defer></script>
+  <script src="/js/theme-init.js?v=3026.10"></script>
+  <link rel="stylesheet" href="/css/demo.css?v=3026.10">
+  <script src="/js/demo.js?v=3026.10" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Leadwise CRM", "description": "Frontend demo of a customer relationship management dashboard.", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 </head>
 <body>
@@ -30,7 +30,7 @@
   <div class="app">
     <aside class="sidebar" id="sidebar" aria-label="Sidebar">
       <a class="brand" href="#overview">
-        <img class="brand-mark" src="/favicon.svg?v=2" width="40" height="40" alt="">
+        <img class="brand-mark" src="/favicon.svg?v=3" width="40" height="40" alt="">
         <span><span class="brand-name">Leadwise<span>CRM</span></span><span class="brand-tag">Customer workspace</span></span>
       </a>
 
@@ -184,7 +184,7 @@
               <thead><tr><th scope="col">Contact</th><th scope="col">Company</th><th scope="col">Status</th><th scope="col">Source</th><th scope="col">Added</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead>
               <tbody id="leadRows">
               <tr data-status="qualified">
-                <td><div class="contact"><span class="contact-avatar violet" aria-hidden="true">AM</span><span><span class="contact-name">Alex Morgan</span><span class="contact-mail">alex.morgan@example.com</span></span></div></td>
+                <td><div class="contact"><span class="contact-avatar violet" aria-hidden="true">AM</span><span><span class="contact-name">Alex Morgan</span><span class="contact-mail"><!--email_off-->alex.morgan@example.com<!--/email_off--></span></span></div></td>
                 <td>Northstar Studio</td>
                 <td><span class="status status-qualified">Qualified</span></td>
                 <td>Website</td>
@@ -192,7 +192,7 @@
                 <td><button class="icon-btn" type="button" aria-label="Alex Morgan actions" data-toast="Alex Morgan|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
               </tr>
               <tr data-status="progress">
-                <td><div class="contact"><span class="contact-avatar green" aria-hidden="true">SK</span><span><span class="contact-name">Sam Kim</span><span class="contact-mail">sam.kim@example.com</span></span></div></td>
+                <td><div class="contact"><span class="contact-avatar green" aria-hidden="true">SK</span><span><span class="contact-name">Sam Kim</span><span class="contact-mail"><!--email_off-->sam.kim@example.com<!--/email_off--></span></span></div></td>
                 <td>Brightpath Labs</td>
                 <td><span class="status status-progress">In progress</span></td>
                 <td>Referral</td>
@@ -200,7 +200,7 @@
                 <td><button class="icon-btn" type="button" aria-label="Sam Kim actions" data-toast="Sam Kim|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
               </tr>
               <tr data-status="new">
-                <td><div class="contact"><span class="contact-avatar amber" aria-hidden="true">RP</span><span><span class="contact-name">Riley Patel</span><span class="contact-mail">riley.patel@example.com</span></span></div></td>
+                <td><div class="contact"><span class="contact-avatar amber" aria-hidden="true">RP</span><span><span class="contact-name">Riley Patel</span><span class="contact-mail"><!--email_off-->riley.patel@example.com<!--/email_off--></span></span></div></td>
                 <td>Evergreen Co.</td>
                 <td><span class="status status-new">New</span></td>
                 <td>Social media</td>
@@ -208,7 +208,7 @@
                 <td><button class="icon-btn" type="button" aria-label="Riley Patel actions" data-toast="Riley Patel|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
               </tr>
               <tr data-status="qualified">
-                <td><div class="contact"><span class="contact-avatar blue" aria-hidden="true">JT</span><span><span class="contact-name">Jamie Taylor</span><span class="contact-mail">jamie.taylor@example.com</span></span></div></td>
+                <td><div class="contact"><span class="contact-avatar blue" aria-hidden="true">JT</span><span><span class="contact-name">Jamie Taylor</span><span class="contact-mail"><!--email_off-->jamie.taylor@example.com<!--/email_off--></span></span></div></td>
                 <td>Bluepeak Digital</td>
                 <td><span class="status status-qualified">Qualified</span></td>
                 <td>Website</td>
@@ -216,7 +216,7 @@
                 <td><button class="icon-btn" type="button" aria-label="Jamie Taylor actions" data-toast="Jamie Taylor|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
               </tr>
               <tr data-status="progress">
-                <td><div class="contact"><span class="contact-avatar violet" aria-hidden="true">PN</span><span><span class="contact-name">Priya Nair</span><span class="contact-mail">priya.nair@example.com</span></span></div></td>
+                <td><div class="contact"><span class="contact-avatar violet" aria-hidden="true">PN</span><span><span class="contact-name">Priya Nair</span><span class="contact-mail"><!--email_off-->priya.nair@example.com<!--/email_off--></span></span></div></td>
                 <td>Harbor &amp; Pine</td>
                 <td><span class="status status-progress">In progress</span></td>
                 <td>Website</td>
@@ -224,7 +224,7 @@
                 <td><button class="icon-btn" type="button" aria-label="Priya Nair actions" data-toast="Priya Nair|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
               </tr>
               <tr data-status="new">
-                <td><div class="contact"><span class="contact-avatar green" aria-hidden="true">CM</span><span><span class="contact-name">Chris Mensah</span><span class="contact-mail">chris.mensah@example.com</span></span></div></td>
+                <td><div class="contact"><span class="contact-avatar green" aria-hidden="true">CM</span><span><span class="contact-name">Chris Mensah</span><span class="contact-mail"><!--email_off-->chris.mensah@example.com<!--/email_off--></span></span></div></td>
                 <td>Goldcoast Logistics</td>
                 <td><span class="status status-new">New</span></td>
                 <td>Referral</td>
