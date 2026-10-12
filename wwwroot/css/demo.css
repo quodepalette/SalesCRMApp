@@ -618,3 +618,9 @@ td:last-child, th:last-child { text-align: right; }
 #overview, #leads { scroll-margin-top: 5.5rem; }
 #leads:focus { outline: none; }
 .chart-y span { line-height: 1; }
+
+/* Friendly page for unknown addresses (404.html). */
+.notfound { display: grid; place-content: center; justify-items: center; gap: 1rem; min-height: 100vh; padding: 2rem; text-align: center; }
+.notfound img { width: 4rem; height: 4rem; }
+.notfound .code { font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.notfound p { max-width: 28rem; color: var(--muted); font-size: var(--fs-md); }
