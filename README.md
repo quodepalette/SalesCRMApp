@@ -20,7 +20,7 @@ Everything on the page is sample data. There is no login, nothing is saved and n
 
 ## Demo Link
 
-[Visit the LeadWise Live Site](https://leadwise.quodepalette.com)
+[Visit the Leadwise Live Site](https://leadwise.quodepalette.com)
 
 ## Run it
 
