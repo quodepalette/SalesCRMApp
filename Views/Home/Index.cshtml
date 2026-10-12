@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Overview";
+}
+
+<section class="welcome-section">
+    <div class="welcome-copy">
+        <span class="eyebrow"><span class="status-dot"></span> YOUR SALES WORKSPACE</span>
+        <h1>Good work starts with <span>good relationships.</span></h1>
+        <p class="welcome-description">Keep your leads organised, follow up with confidence, and make every customer conversation count.</p>
+        <div class="welcome-actions">
+            <a class="btn btn-primary btn-lg" asp-controller="Leads" asp-action="Create"><span aria-hidden="true">+</span> Add a lead</a>
+            <a class="btn btn-light btn-lg secondary-action" asp-controller="Leads" asp-action="Index">View all leads <span aria-hidden="true">↗</span></a>
+        </div>
+    </div>
+    <div class="welcome-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card art-card-main"><div class="art-avatar avatar-purple">S</div><div><span class="art-label">Customer first</span><strong>Build trust</strong></div><span class="art-check">✓</span></div>
+        <div class="art-card art-card-small"><span class="art-spark">✦</span><div><strong>Stay in sync</strong><span class="art-label">One step at a time</span></div></div>
+        <div class="art-circle"><span>CRM</span></div>
+    </div>
+</section>
+
+<section class="section-heading">
+    <div><span class="eyebrow">GET STARTED</span><h2>What would you like to do?</h2><p>Jump straight into the work that matters.</p></div>
+</section>
+
+<section class="action-grid" aria-label="Quick actions">
+    <a class="action-card" asp-controller="Leads" asp-action="Index">
+        <span class="action-icon icon-blue" aria-hidden="true">↗</span>
+        <span class="action-card-content"><strong>Manage leads</strong><span>Review your pipeline and update customer details.</span><span class="action-link">Open leads <span aria-hidden="true">→</span></span></span>
+    </a>
+    <a class="action-card" asp-controller="Leads" asp-action="Create">
+        <span class="action-icon icon-green" aria-hidden="true">＋</span>
+        <span class="action-card-content"><strong>Add a new lead</strong><span>Capture contact information and where the lead came from.</span><span class="action-link">Create lead <span aria-hidden="true">→</span></span></span>
+    </a>
+    <a class="action-card" asp-controller="AppRoles" asp-action="Index">
+        <span class="action-icon icon-amber" aria-hidden="true">⌘</span>
+        <span class="action-card-content"><strong>Application roles</strong><span>Review the roles configured for this application.</span><span class="action-link">View roles <span aria-hidden="true">→</span></span></span>
+    </a>
+</section>
+
+<section class="note-panel">
+    <div class="note-icon" aria-hidden="true">✦</div>
+    <div><strong>A workspace that stays out of your way</strong><p>Start with your leads, keep information current, and use the navigation to move between the main tools.</p></div>
+    <a asp-controller="Leads" asp-action="Index" aria-label="Go to leads">Explore leads <span aria-hidden="true">→</span></a>
+</section>

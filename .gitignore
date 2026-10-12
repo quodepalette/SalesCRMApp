@@ -1,0 +1,32 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# IDE settings
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local configuration and secrets
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# User-specific and local environment files
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.local.json
+*.publishsettings

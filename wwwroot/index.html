@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leadwise CRM | Customer workspace demo</title>
+  <meta name="description" content="Leadwise CRM is a frontend demo of a customer dashboard with animated lead stats, a pipeline chart, lead sources and a searchable lead table.">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f6fb">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Leadwise CRM">
+  <meta property="og:title" content="Leadwise CRM | Customer workspace demo">
+  <meta property="og:description" content="A clean, accessible CRM dashboard demo with light and dark themes.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="/js/theme-init.js?v=2026.10"></script>
+  <link rel="stylesheet" href="/css/demo.css?v=2026.10">
+  <script src="/js/demo.js?v=2026.10" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Leadwise CRM", "description": "Frontend demo of a customer relationship management dashboard.", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><symbol id="i-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-contact" viewBox="0 0 24 24"><path d="M16 2v2"/><path d="M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><path d="M8 2v2"/><circle cx="12" cy="11" r="3"/><rect x="3" y="4" width="18" height="18" rx="2"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><path d="M21 4h-7"/><path d="M10 4H3"/><path d="M21 12h-9"/><path d="M8 12H3"/><path d="M21 20h-5"/><path d="M12 20H3"/><path d="M14 2v4"/><path d="M8 10v4"/><path d="M16 18v4"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 6h16"/><path d="M4 18h16"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-trend-up" viewBox="0 0 24 24"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></symbol><symbol id="i-percent" viewBox="0 0 24 24"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol><symbol id="i-dollar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></symbol><symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol><symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol><symbol id="i-more" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></symbol><symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol><symbol id="i-life-buoy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol></svg>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Sidebar">
+      <a class="brand" href="#overview">
+        <img class="brand-mark" src="/favicon.svg?v=2" width="40" height="40" alt="">
+        <span><span class="brand-name">Leadwise<span>CRM</span></span><span class="brand-tag">Customer workspace</span></span>
+      </a>
+
+      <div>
+        <p class="nav-label" id="nav-label">Workspace</p>
+        <nav class="side-nav" aria-labelledby="nav-label">
+          <a class="nav-item" href="#overview" aria-current="page"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-dashboard"/></svg>Overview</a>
+          <a class="nav-item" href="#leads"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg>Leads<span class="nav-count">24</span></a>
+          <a class="nav-item" href="#contacts" data-toast="Contacts|The contacts view is coming soon in this demo."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-contact"/></svg>Contacts</a>
+          <a class="nav-item" href="#reports" data-toast="Reports|Reports need real data behind them. Connect an API to unlock this page."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>Reports</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <span class="chip-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-life-buoy"/></svg></span>
+          <p class="help-title">Need a hand?</p>
+          <p class="help-text">Explore the demo workspace and try any action.</p>
+          <button class="btn btn-link" type="button" data-toast="Welcome|Everything here is sample data. Try the search, the status filter and the theme toggle.">Explore demo <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg></button>
+        </div>
+        <a class="nav-item" href="#settings" data-toast="Settings|Workspace settings are not part of this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-settings"/></svg>Settings</a>
+        <div class="profile">
+          <span class="avatar" aria-hidden="true">JD</span>
+          <span><span class="profile-name">Jordan Davis</span><span class="profile-role">Workspace admin</span></span>
+          <button class="icon-btn" type="button" aria-label="Open profile menu" data-toast="Profile|Account options are not part of this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button>
+        </div>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim" aria-hidden="true"></div>
+
+    <div class="main-area">
+      <header class="topbar">
+        <div class="topbar-start">
+          <button class="icon-btn mobile-menu" id="menuButton" type="button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></button>
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li>Workspace</li><li aria-current="page">Overview</li></ol></nav>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" id="searchButton" type="button" aria-label="Search leads"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+          <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme"><svg class="icon icon-moon" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg><svg class="icon icon-sun" aria-hidden="true" focusable="false"><use href="#i-sun"/></svg></button>
+          <button class="icon-btn" type="button" aria-label="Notifications, 3 unread" data-toast="Notifications|You have 3 sample updates. Real alerts need a backend."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"/></svg><span class="badge-dot" aria-hidden="true"></span></button>
+          <span class="avatar" aria-hidden="true">JD</span>
+        </div>
+      </header>
+
+      <main id="main" tabindex="-1">
+        <section class="page-heading" id="overview" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span><time id="today">Workspace overview</time></p>
+            <h1 id="page-title"><span id="greeting">Welcome back</span>, Jordan</h1>
+            <p class="lede">Here is what is happening with your customer relationships today.</p>
+          </div>
+          <button class="btn btn-primary" type="button" data-toast="Add new lead|The lead form is not built into this demo yet. Connect an API to save new leads."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>Add new lead</button>
+        </section>
+
+        <section class="metrics" aria-labelledby="metrics-title">
+          <h2 class="sr-only" id="metrics-title">CRM summary</h2>
+          <article class="card metric-card reveal" data-animate data-d="1">
+            <div class="metric-top">
+              <h3 class="metric-label">Total leads</h3>
+              <span class="chip-icon blue"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span>
+            </div>
+            <p class="metric-value"><span data-count="1284" data-decimals="0" data-prefix="">1,284</span></p>
+            <p class="metric-foot"><span class="trend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trend-up"/></svg><span class="sr-only">Up </span>12.8%</span><span>vs last month</span></p>
+            <svg class="spark blue" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="spark-area" d="M0.0 39.0 C3.0 38.5 12.1 36.4 18.2 36.1 C24.2 35.8 30.3 37.8 36.4 37.2 C42.4 36.6 48.5 34.1 54.5 32.4 C60.6 30.8 66.7 27.8 72.7 27.3 C78.8 26.8 84.8 30.1 90.9 29.5 C97.0 28.9 103.0 25.3 109.1 23.6 C115.2 21.9 121.2 20.3 127.3 19.2 C133.3 18.1 139.4 18.0 145.5 17.0 C151.5 16.0 157.6 14.5 163.6 13.4 C169.7 12.2 175.8 11.4 181.8 10.1 C187.9 8.7 197.0 5.8 200.0 5.0 L200 44 L0 44 Z"/><path class="spark-line" d="M0.0 39.0 C3.0 38.5 12.1 36.4 18.2 36.1 C24.2 35.8 30.3 37.8 36.4 37.2 C42.4 36.6 48.5 34.1 54.5 32.4 C60.6 30.8 66.7 27.8 72.7 27.3 C78.8 26.8 84.8 30.1 90.9 29.5 C97.0 28.9 103.0 25.3 109.1 23.6 C115.2 21.9 121.2 20.3 127.3 19.2 C133.3 18.1 139.4 18.0 145.5 17.0 C151.5 16.0 157.6 14.5 163.6 13.4 C169.7 12.2 175.8 11.4 181.8 10.1 C187.9 8.7 197.0 5.8 200.0 5.0" pathLength="1"/></svg>
+          </article>
+          <article class="card metric-card reveal" data-animate data-d="2">
+            <div class="metric-top">
+              <h3 class="metric-label">Qualified leads</h3>
+              <span class="chip-icon green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check-circle"/></svg></span>
+            </div>
+            <p class="metric-value"><span data-count="846" data-decimals="0" data-prefix="">846</span></p>
+            <p class="metric-foot"><span class="trend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trend-up"/></svg><span class="sr-only">Up </span>8.2%</span><span>vs last month</span></p>
+            <svg class="spark green" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="spark-area" d="M0.0 39.0 C3.0 38.6 12.1 37.7 18.2 36.8 C24.2 35.9 30.3 33.9 36.4 33.4 C42.4 33.0 48.5 34.9 54.5 34.0 C60.6 33.1 66.7 29.3 72.7 27.9 C78.8 26.5 84.8 26.8 90.9 25.7 C97.0 24.6 103.0 21.8 109.1 21.2 C115.2 20.7 121.2 23.3 127.3 22.3 C133.3 21.4 139.4 17.3 145.5 15.7 C151.5 14.0 157.6 13.4 163.6 12.3 C169.7 11.2 175.8 10.2 181.8 9.0 C187.9 7.8 197.0 5.7 200.0 5.0 L200 44 L0 44 Z"/><path class="spark-line" d="M0.0 39.0 C3.0 38.6 12.1 37.7 18.2 36.8 C24.2 35.9 30.3 33.9 36.4 33.4 C42.4 33.0 48.5 34.9 54.5 34.0 C60.6 33.1 66.7 29.3 72.7 27.9 C78.8 26.5 84.8 26.8 90.9 25.7 C97.0 24.6 103.0 21.8 109.1 21.2 C115.2 20.7 121.2 23.3 127.3 22.3 C133.3 21.4 139.4 17.3 145.5 15.7 C151.5 14.0 157.6 13.4 163.6 12.3 C169.7 11.2 175.8 10.2 181.8 9.0 C187.9 7.8 197.0 5.7 200.0 5.0" pathLength="1"/></svg>
+          </article>
+          <article class="card metric-card reveal" data-animate data-d="3">
+            <div class="metric-top">
+              <h3 class="metric-label">Conversion rate</h3>
+              <span class="chip-icon violet"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-percent"/></svg></span>
+            </div>
+            <p class="metric-value"><span data-count="24.8" data-decimals="1" data-prefix="">24.8</span><span class="metric-unit">%</span></p>
+            <p class="metric-foot"><span class="trend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trend-up"/></svg><span class="sr-only">Up </span>2.4%</span><span>vs last month</span></p>
+            <svg class="spark violet" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="spark-area" d="M0.0 39.0 C3.0 38.2 12.1 34.3 18.2 33.9 C24.2 33.6 30.3 37.7 36.4 36.8 C42.4 36.0 48.5 30.8 54.5 28.9 C60.6 26.9 66.7 25.6 72.7 25.3 C78.8 24.9 84.8 27.8 90.9 26.7 C97.0 25.6 103.0 20.4 109.1 18.7 C115.2 17.1 121.2 17.4 127.3 16.6 C133.3 15.7 139.4 14.6 145.5 13.7 C151.5 12.7 157.6 11.6 163.6 10.8 C169.7 9.9 175.8 9.6 181.8 8.6 C187.9 7.7 197.0 5.6 200.0 5.0 L200 44 L0 44 Z"/><path class="spark-line" d="M0.0 39.0 C3.0 38.2 12.1 34.3 18.2 33.9 C24.2 33.6 30.3 37.7 36.4 36.8 C42.4 36.0 48.5 30.8 54.5 28.9 C60.6 26.9 66.7 25.6 72.7 25.3 C78.8 24.9 84.8 27.8 90.9 26.7 C97.0 25.6 103.0 20.4 109.1 18.7 C115.2 17.1 121.2 17.4 127.3 16.6 C133.3 15.7 139.4 14.6 145.5 13.7 C151.5 12.7 157.6 11.6 163.6 10.8 C169.7 9.9 175.8 9.6 181.8 8.6 C187.9 7.7 197.0 5.6 200.0 5.0" pathLength="1"/></svg>
+          </article>
+          <article class="card metric-card reveal" data-animate data-d="4">
+            <div class="metric-top">
+              <h3 class="metric-label">Pipeline value</h3>
+              <span class="chip-icon amber"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-dollar"/></svg></span>
+            </div>
+            <p class="metric-value"><span data-count="48520" data-decimals="0" data-prefix="$">$48,520</span></p>
+            <p class="metric-foot"><span class="trend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trend-up"/></svg><span class="sr-only">Up </span>16.4%</span><span>vs last month</span></p>
+            <svg class="spark amber" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="spark-area" d="M0.0 39.0 C3.0 38.5 12.1 36.3 18.2 36.1 C24.2 35.8 30.3 38.3 36.4 37.4 C42.4 36.6 48.5 32.3 54.5 30.8 C60.6 29.4 66.7 29.7 72.7 28.5 C78.8 27.3 84.8 24.8 90.9 23.7 C97.0 22.6 103.0 23.0 109.1 21.9 C115.2 20.9 121.2 18.7 127.3 17.5 C133.3 16.3 139.4 15.9 145.5 14.7 C151.5 13.6 157.6 11.8 163.6 10.7 C169.7 9.5 175.8 8.9 181.8 7.9 C187.9 7.0 197.0 5.5 200.0 5.0 L200 44 L0 44 Z"/><path class="spark-line" d="M0.0 39.0 C3.0 38.5 12.1 36.3 18.2 36.1 C24.2 35.8 30.3 38.3 36.4 37.4 C42.4 36.6 48.5 32.3 54.5 30.8 C60.6 29.4 66.7 29.7 72.7 28.5 C78.8 27.3 84.8 24.8 90.9 23.7 C97.0 22.6 103.0 23.0 109.1 21.9 C115.2 20.9 121.2 18.7 127.3 17.5 C133.3 16.3 139.4 15.9 145.5 14.7 C151.5 13.6 157.6 11.8 163.6 10.7 C169.7 9.5 175.8 8.9 181.8 7.9 C187.9 7.0 197.0 5.5 200.0 5.0" pathLength="1"/></svg>
+          </article>
+        </section>
+
+        <div class="content-grid">
+          <section class="panel reveal" data-animate data-d="5" aria-labelledby="pipeline-title">
+            <div class="panel-heading">
+              <div><h2 id="pipeline-title">Lead pipeline</h2><p>Track your leads through each stage.</p></div>
+              <div class="select-wrap"><label class="sr-only" for="rangeFilter">Time range</label>
+                <select id="rangeFilter"><option>This month</option><option>Last month</option><option>Last 90 days</option></select><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></div>
+            </div>
+            <div class="legend">
+              <div><span class="dot blue"></span>New leads <strong data-count="342">342</strong></div>
+              <div><span class="dot violet"></span>In progress <strong data-count="286">286</strong></div>
+              <div><span class="dot green"></span>Qualified <strong data-count="218">218</strong></div>
+            </div>
+            <div class="chart" aria-hidden="true">
+              <div class="chart-y"><span>400</span><span>300</span><span>200</span><span>100</span><span>0</span></div>
+              <div class="chart-plot"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><div class="bar-group" data-tip="May: 268 new, 208 in progress, 152 qualified"><div class="bar blue" data-v="268"></div><div class="bar violet" data-v="208"></div><div class="bar green" data-v="152"></div><span>May</span></div><div class="bar-group" data-tip="Jun: 296 new, 224 in progress, 168 qualified"><div class="bar blue" data-v="296"></div><div class="bar violet" data-v="224"></div><div class="bar green" data-v="168"></div><span>Jun</span></div><div class="bar-group" data-tip="Jul: 254 new, 196 in progress, 146 qualified"><div class="bar blue" data-v="254"></div><div class="bar violet" data-v="196"></div><div class="bar green" data-v="146"></div><span>Jul</span></div><div class="bar-group" data-tip="Aug: 318 new, 244 in progress, 186 qualified"><div class="bar blue" data-v="318"></div><div class="bar violet" data-v="244"></div><div class="bar green" data-v="186"></div><span>Aug</span></div><div class="bar-group" data-tip="Sep: 306 new, 248 in progress, 192 qualified"><div class="bar blue" data-v="306"></div><div class="bar violet" data-v="248"></div><div class="bar green" data-v="192"></div><span>Sep</span></div><div class="bar-group" data-tip="Oct: 342 new, 286 in progress, 218 qualified"><div class="bar blue" data-v="342"></div><div class="bar violet" data-v="286"></div><div class="bar green" data-v="218"></div><span>Oct</span></div></div>
+            </div>
+            <div class="sr-only"><table><caption>Leads by stage for the last six months</caption><thead><tr><th scope="col">Month</th><th scope="col">New</th><th scope="col">In progress</th><th scope="col">Qualified</th></tr></thead><tbody><tr><th scope="row">May</th><td>268</td><td>208</td><td>152</td></tr><tr><th scope="row">Jun</th><td>296</td><td>224</td><td>168</td></tr><tr><th scope="row">Jul</th><td>254</td><td>196</td><td>146</td></tr><tr><th scope="row">Aug</th><td>318</td><td>244</td><td>186</td></tr><tr><th scope="row">Sep</th><td>306</td><td>248</td><td>192</td></tr><tr><th scope="row">Oct</th><td>342</td><td>286</td><td>218</td></tr></tbody></table></div>
+          </section>
+
+          <section class="panel reveal" data-animate data-d="6" aria-labelledby="sources-title">
+            <div class="panel-heading">
+              <div><h2 id="sources-title">Lead sources</h2><p>Where your leads come from.</p></div>
+              <button class="icon-btn" type="button" aria-label="More lead source options" data-toast="Lead sources|Export and sharing options arrive once the app has an API."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button>
+            </div>
+            <div class="donut-wrap">
+              <svg class="donut" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+                <circle class="track" cx="18" cy="18" r="15.9155"/>
+                <circle class="seg seg-blue" cx="18" cy="18" r="15.9155" pathLength="100" stroke-dasharray="40.5 59.5" stroke-dashoffset="0"/>
+                <circle class="seg seg-violet" cx="18" cy="18" r="15.9155" pathLength="100" stroke-dasharray="26.5 73.5" stroke-dashoffset="-42"/>
+                <circle class="seg seg-green" cx="18" cy="18" r="15.9155" pathLength="100" stroke-dasharray="16.5 83.5" stroke-dashoffset="-70"/>
+                <circle class="seg seg-amber" cx="18" cy="18" r="15.9155" pathLength="100" stroke-dasharray="10.5 89.5" stroke-dashoffset="-88"/>
+              </svg>
+              <div class="donut-center"><strong data-count="1284">1,284</strong><span>Total leads</span></div>
+            </div>
+            <ul class="source-list">
+              <li><span><i class="dot blue"></i>Website</span><strong>42%</strong></li>
+              <li><span><i class="dot violet"></i>Referral</span><strong>28%</strong></li>
+              <li><span><i class="dot green"></i>Social media</span><strong>18%</strong></li>
+              <li><span><i class="dot amber"></i>Other</span><strong>12%</strong></li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="panel leads-panel reveal" data-d="7" id="leads" tabindex="-1" aria-labelledby="leads-title">
+          <div class="panel-heading leads-heading">
+            <div><h2 id="leads-title">Recent leads</h2><p>Keep an eye on your latest customer opportunities.</p></div>
+            <div class="table-actions">
+              <label class="search-box"><span class="sr-only">Search leads</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><input id="leadSearch" type="search" placeholder="Search leads" autocomplete="off" aria-keyshortcuts="/" aria-controls="leadRows"><kbd aria-hidden="true">/</kbd></label>
+              <div class="select-wrap"><label class="sr-only" for="statusFilter">Filter by status</label>
+                <select id="statusFilter" aria-controls="leadRows"><option value="all">All statuses</option><option value="new">New</option><option value="progress">In progress</option><option value="qualified">Qualified</option></select><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></div>
+              <button class="btn btn-outline" type="button" data-toast="View all leads|The full list of 1,284 leads needs a database behind it.">View all <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+          <div class="table-scroll" role="region" aria-label="Recent leads table, scrollable" tabindex="0">
+            <table>
+              <caption class="sr-only">Recent leads with company, status, source and date added</caption>
+              <thead><tr><th scope="col">Contact</th><th scope="col">Company</th><th scope="col">Status</th><th scope="col">Source</th><th scope="col">Added</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead>
+              <tbody id="leadRows">
+              <tr data-status="qualified">
+                <td><div class="contact"><span class="contact-avatar violet" aria-hidden="true">AM</span><span><span class="contact-name">Alex Morgan</span><span class="contact-mail">alex.morgan@example.com</span></span></div></td>
+                <td>Northstar Studio</td>
+                <td><span class="status status-qualified">Qualified</span></td>
+                <td>Website</td>
+                <td><time datetime="2026-10-11">Oct 11, 2026</time></td>
+                <td><button class="icon-btn" type="button" aria-label="Alex Morgan actions" data-toast="Alex Morgan|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
+              </tr>
+              <tr data-status="progress">
+                <td><div class="contact"><span class="contact-avatar green" aria-hidden="true">SK</span><span><span class="contact-name">Sam Kim</span><span class="contact-mail">sam.kim@example.com</span></span></div></td>
+                <td>Brightpath Labs</td>
+                <td><span class="status status-progress">In progress</span></td>
+                <td>Referral</td>
+                <td><time datetime="2026-10-10">Oct 10, 2026</time></td>
+                <td><button class="icon-btn" type="button" aria-label="Sam Kim actions" data-toast="Sam Kim|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
+              </tr>
+              <tr data-status="new">
+                <td><div class="contact"><span class="contact-avatar amber" aria-hidden="true">RP</span><span><span class="contact-name">Riley Patel</span><span class="contact-mail">riley.patel@example.com</span></span></div></td>
+                <td>Evergreen Co.</td>
+                <td><span class="status status-new">New</span></td>
+                <td>Social media</td>
+                <td><time datetime="2026-10-09">Oct 9, 2026</time></td>
+                <td><button class="icon-btn" type="button" aria-label="Riley Patel actions" data-toast="Riley Patel|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
+              </tr>
+              <tr data-status="qualified">
+                <td><div class="contact"><span class="contact-avatar blue" aria-hidden="true">JT</span><span><span class="contact-name">Jamie Taylor</span><span class="contact-mail">jamie.taylor@example.com</span></span></div></td>
+                <td>Bluepeak Digital</td>
+                <td><span class="status status-qualified">Qualified</span></td>
+                <td>Website</td>
+                <td><time datetime="2026-10-08">Oct 8, 2026</time></td>
+                <td><button class="icon-btn" type="button" aria-label="Jamie Taylor actions" data-toast="Jamie Taylor|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
+              </tr>
+              <tr data-status="progress">
+                <td><div class="contact"><span class="contact-avatar violet" aria-hidden="true">PN</span><span><span class="contact-name">Priya Nair</span><span class="contact-mail">priya.nair@example.com</span></span></div></td>
+                <td>Harbor &amp; Pine</td>
+                <td><span class="status status-progress">In progress</span></td>
+                <td>Website</td>
+                <td><time datetime="2026-10-07">Oct 7, 2026</time></td>
+                <td><button class="icon-btn" type="button" aria-label="Priya Nair actions" data-toast="Priya Nair|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
+              </tr>
+              <tr data-status="new">
+                <td><div class="contact"><span class="contact-avatar green" aria-hidden="true">CM</span><span><span class="contact-name">Chris Mensah</span><span class="contact-mail">chris.mensah@example.com</span></span></div></td>
+                <td>Goldcoast Logistics</td>
+                <td><span class="status status-new">New</span></td>
+                <td>Referral</td>
+                <td><time datetime="2026-10-06">Oct 6, 2026</time></td>
+                <td><button class="icon-btn" type="button" aria-label="Chris Mensah actions" data-toast="Chris Mensah|Row actions like edit and archive are not wired up in this preview."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></button></td>
+              </tr>
+                <tr class="empty-row" id="emptyRow" hidden><td colspan="6">No leads match your search. Try a different name or company.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-footer">
+            <p aria-live="polite">Showing <strong id="visibleCount">6</strong> of 1,284 leads</p>
+            <nav class="pagination" aria-label="Pagination">
+              <button class="page-btn" type="button" aria-label="Previous page" disabled><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-left"/></svg></button>
+              <button class="page-btn" type="button" aria-label="Page 1" aria-current="page">1</button>
+              <button class="page-btn" type="button" aria-label="Page 2" data-toast="Pagination|This demo only ships the first page of sample leads.">2</button>
+              <button class="page-btn" type="button" aria-label="Page 3" data-toast="Pagination|This demo only ships the first page of sample leads.">3</button>
+              <span class="page-gap" aria-hidden="true">&hellip;</span>
+              <button class="page-btn" type="button" aria-label="Next page" data-toast="Pagination|This demo only ships the first page of sample leads."><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-right"/></svg></button>
+            </nav>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer"><span>&copy; 2026 Leadwise CRM</span><span>Frontend demo. Actions are for preview only.</span></footer>
+    </div>
+  </div>
+
+  <div class="toast-region" id="toastRegion" role="status" aria-live="polite" aria-atomic="false"></div>
+</body>
+</html>
