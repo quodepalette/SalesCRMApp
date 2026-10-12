@@ -8,6 +8,10 @@ Everything on the page is sample data. There is no login, nothing is saved and n
 
 ![Leadwise CRM in the dark theme](docs/screenshot-dark.png)
 
+![Google PageSpeed Insights Mobile](docs/mobile.png)
+
+![Google PageSpeed Insights Desktop](docs/desktop.png)
+
 ## What is inside
 
 - A light and dark theme. It follows your system at first, then remembers your choice.
