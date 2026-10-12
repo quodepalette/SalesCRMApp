@@ -1,0 +1,12 @@
+# Leadwise CRM
+
+> Leadwise CRM is a frontend demo of a customer relationship dashboard. It shows sample lead stats, a pipeline chart, lead sources and a searchable lead table. All data is placeholder content and nothing is saved.
+
+## Pages
+
+- [Dashboard](https://leadwise.quodepalette.com/): The one page in the demo, with summary stats, charts and the lead table
+
+## Optional
+
+- [robots.txt](https://leadwise.quodepalette.com/robots.txt): Crawler rules for this site
+- [Web app manifest](https://leadwise.quodepalette.com/site.webmanifest): Install details and icons
