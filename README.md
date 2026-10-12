@@ -18,6 +18,10 @@ Everything on the page is sample data. There is no login, nothing is saved and n
 - Keyboard friendly navigation, visible focus, a skip link and screen reader labels.
 - A self hosted font, so the page makes no third party requests.
 
+## Demo Link
+
+[Visit the LeadWise Live Site](https://leadwise.quodepalette.com)
+
 ## Run it
 
 You need the .NET 10 SDK.
